@@ -1,4 +1,4 @@
-import './styles/App.css'
+/* import './styles/App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Employee from './components/Employee/Employee'
 
@@ -13,6 +13,59 @@ function App() {
         EmpCity={'New York'}
         EmpCountry={'USA'}
       />
+    </div>
+  )
+}
+
+export default App
+ */
+
+import './styles/App.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Employee from './components/Employee/Employee'
+import LoginForm from './components/LoginForm/LoginForm'
+
+function App() {
+  const employeeData = [
+    {
+      EmplD: 1,
+      EmpName: 'John Doe',
+      EmpSalary: 5000,
+      Department: 'IT',
+      EmpCity: 'New York',
+      EmpCountry: 'USA',
+    },
+    {
+      EmplD: 2,
+      EmpName: 'Max Haywell',
+      EmpSalary: 3400,
+      Department: 'Sales',
+      EmpCity: 'Denver',
+      EmpCountry: 'USA',
+    },
+
+    {
+      EmplD: 3,
+      EmpName: 'Dave Higgs',
+      EmpSalary: 8000,
+      Department: 'Admin',
+      EmpCity: 'Dallss',
+      EmpCountry: 'USA',
+    },
+
+    {
+      EmplD: 4,
+      EmpName: 'Judy Keltner',
+      EmpSalary: 4000,
+      Department: 'IT',
+      EmpCity: 'Tampa',
+      EmpCountry: 'USA',
+    },
+  ]
+  return (
+    <div>
+      <Employee employees={employeeData} />
+      <LoginForm />
     </div>
   )
 }

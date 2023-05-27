@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 1010px;
+}
+
+.subcontainer {
+  background: aliceblue;
+  width: inherit;
+  z-index: -3;
+  position: absolute;
+  background: aliceblue;
+}
+
+#div1 {
+  width: 300px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: lightcyan;
+  border: 2px solid darkcyan;
+  border-radius: 20px;
+  padding: 10px;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: darkcyan;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
