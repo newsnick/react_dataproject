@@ -24,6 +24,7 @@ import './styles/App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Employee from './components/Employee/Employee'
 import LoginForm from './components/LoginForm/LoginForm'
+import Product from './components/Product/Product'
 
 function App() {
   const employeeData = [
@@ -66,6 +67,10 @@ function App() {
     <div>
       <Employee employees={employeeData} />
       <LoginForm />
+      <div className="products">
+        {' '}
+        <Product />
+      </div>
     </div>
   )
 }
